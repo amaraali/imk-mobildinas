@@ -7,7 +7,7 @@ require '../functions.php';
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="BPMPK Sistem Informasi Peminjaman Kendaraan Dinas Abi Anbiya Abianbiya Amara cokilabs">
+    <meta name="description" content="IMK Sistem Informasi Peminjaman Kendaraan Dinas Kelompok 7">
     <meta name="author" content="amara, fachrizal, bharaka, ghamal">
     <meta name="generator" content="Jekyll v4.1.1">
     <title>PT.MCS</title>

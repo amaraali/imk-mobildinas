@@ -46,8 +46,8 @@
 
             <div class="row">
               <div class="col-md-8 mb-3">
-              <label for="alamatrumah">Keperluan</label>
-              <textarea class="form-control" id="alamatrumah" placeholder="Keperluan" required name="keperluan"></textarea>
+              <label for="keperluan">Keperluan</label>
+              <textarea class="form-control" id="keperluan" placeholder="Keperluan" required name="keperluan"></textarea>
               <div class="invalid-feedback">
                 Kolom ini tidak boleh kososng.
               </div>

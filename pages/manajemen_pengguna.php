@@ -73,7 +73,7 @@
             <td><?php echo $row["phone"];  ?></td>
             <td>
             	<a class="btn btn-success btn-sm" href="ubah.php?id=<?= $row["id"]; ?>">Ubah</a>
-				<a class="btn btn-danger btn-sm" href="hapus.php?id=<?php echo $row["id"]; ?>" onclick="return confirm('Klik Ok untuk menghapus');">Hapus</a>
+				      <a class="btn btn-danger btn-sm" href="hapus.php?id=<?php echo $row["id"]; ?>" onclick="return confirm('Klik Ok untuk menghapus');">Hapus</a>
             </td>
           </tr>
           <?php $i++; ?>

@@ -77,13 +77,13 @@
           <?php $i=1; ?>
           <?php foreach ($jenis_keperluan as $row) :?>
           <tr>
-            <td><?php echo $i;  ?></td>
             <td>
-
-            <div id="row_jenis_keperluan">
+              <?php echo $i;  ?>       
+            </td>
+            <td>
+              <div id="row_jenis_keperluan">
               <?php echo $row["jenis_keperluan"]; ?>
-            </div>
-
+              </div>
               <form action="#" method="POST" style="display: none" id="form_edit">
                 <input type="hidden" name="aksi" value="edit">
                 <input type="hidden" name="id_jenis_keperluan" value="<?= $row['id'] ?>">
@@ -96,7 +96,7 @@
             </td>
             <td>
               <button class="btn btn-success btn-sm" onclick="hey(this)">Ubah</button>
-        <a class="btn btn-danger btn-sm" href="?hapus_id=<?php echo $row["id"]; ?>" onclick="return confirm('Klik Ok untuk menghapus');">Hapus</a>
+              <a class="btn btn-danger btn-sm" href="?hapus_id=<?php echo $row["id"]; ?>" onclick="return confirm('Klik Ok untuk menghapus');">Hapus</a>
             </td>
           </tr>
           <?php $i++; ?>
