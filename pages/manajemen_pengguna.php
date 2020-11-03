@@ -55,7 +55,7 @@
               <?php 
                 $level = $row["level"]; 
                 if($level == 'dir'){
-                  echo "Kepala Badan";
+                  echo "Direktur Utama";
                 }elseif ($level == 'rt') {
                   echo "Kepala RT";
                 }elseif ($level == 'tu') {

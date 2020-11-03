@@ -64,91 +64,50 @@ if(isset($_POST["login"])){
 
 ?>
 
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
-<!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Login</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="amara, fachrizal, ghamal, bharaka">
+    <title>Login Account</title>
 
-	
-	<div class="limiter">
-		<div class="container-login100" style="background-image: url('images/bg-02.png');">
-			<div class="wrap-login100 p-t-30 p-b-50">
-				<span class="login100-form-title p-b-41">
-					Account Login
-				</span>
-				<form class="login100-form validate-form p-b-33 p-t-5" action="" method="post">
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="Username" id="username">
-						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
-					</div>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="password" placeholder="Password" id="password">
-						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
-					</div>
-
-					<?php if(isset($error)): ?>
-							<p class="container-login100-form m-t-32" style="color: red; font-style: italic; text-align: center;">username / password salah!</p>
-						<?php endif; ?>
-
-
-					<div class="container-login100-form-btn m-t-32">
-						<button class="login100-form-btn" type="submit" name="login">
-							Login
-						</button>
-					</div>					
-				</form>
-			</div>
-		</div>
-	</div>
-	
-
-	<div id="dropDownSelect1"></div>
-	
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link href="login.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+   <form class="form-signin" action="" method="post">
+	  <img class="mb-4" src="pages/img/mcs.png" alt="" width="150" height="150">
+	  <h1 class="h3 mb-3 font-weight-normal">Please Login</h1>
+	  <label for="username" class="sr-only">Username</label>
+	  <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
+	  <label for="password" class="sr-only">Password</label>
+	  <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+	  		<?php if(isset($error)): ?>
+				<p class="container-login100-form m-t-32" style="color: red; font-style: italic; text-align: center;">username / password salah!</p>
+			<?php endif; ?>
+	  <button class="btn btn-lg btn-primary btn-block" name="login" type="submit">Login</button>
+	  <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+	</form>
 </body>
 </html>

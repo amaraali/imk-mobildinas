@@ -70,10 +70,10 @@
 
             <div class="row">
               <div class="col-md-5 mb-3">
-                Tanggal Keberangkatan : <input id="startDate" width="276" name="waktu_pinjam" />
+                Tanggal Keberangkatan : <input id="startDate" width="276" name="waktu_pinjam" autocomplete="off" />
               </div>
               <div class="col-md-5 mb-3">
-                Tanggal Kembali : <input id="endDate" width="276" name="waktu_kembali" />
+                Tanggal Kembali : <input id="endDate" width="276" name="waktu_kembali" autocomplete="off" />
               </div>
               <script>
                 var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());

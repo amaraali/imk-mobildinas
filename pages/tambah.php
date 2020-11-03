@@ -40,7 +40,7 @@
         <form class="needs-validation" method="post" action="" novalidate>
             <div class="mb-3">
               <label for="nama">Nama</label>
-              <input type="text" class="form-control" id="nama" name="nama"  required>
+              <input type="text" class="form-control" id="nama" name="nama" autocomplete="off" required>
               <div class="invalid-feedback">
                 Kolom ini tidak boleh kososng.
               </div>
@@ -48,7 +48,7 @@
 
             <div class="mb-3">
               <label for="username">Username</label>
-              <input type="text" class="form-control" id="username" name="username"  required>
+              <input type="text" class="form-control" id="username" name="username" autocomplete="off" required>
               <div class="invalid-feedback">
                 Kolom ini tidak boleh kososng.
               </div>
@@ -56,7 +56,7 @@
 
             <div class="mb-3">
               <label for="password">Password</label>
-              <input type="text" class="form-control" id="password" name="password"  required>
+              <input type="text" class="form-control" id="password" name="password" autocomplete="off" required>
               <div class="invalid-feedback">
                 Kolom ini tidak boleh kososng.
               </div>
@@ -64,7 +64,7 @@
 
             <div class="mb-3">
               <label for="password2">Konfirmasi Password</label>
-              <input type="text" class="form-control" id="password2" name="password2"  required>
+              <input type="text" class="form-control" id="password2" name="password2" autocomplete="off" required>
               <div class="invalid-feedback">
                 Kolom ini tidak boleh kososng.
               </div>
@@ -74,7 +74,7 @@
               <label for="level">Jabatan</label>
               <select class="custom-select d-block w-100" name="level" id="level">
                 <option disabled="disabled" selected="selected">--Pilih--</option>
-                <option value="dir">Kepala Badan</option>
+                <option value="dir">Direktur Utama</option>
                 <option value="tu">Kepala TU</option>
                 <option value="rt">Kepala RT</option>
                 <option value="supir">Supir</option>
@@ -84,7 +84,7 @@
 
             <div class="mb-3">
               <label for="email">Email</label>
-              <input type="text" class="form-control" id="email" name="email"  required>
+              <input type="text" class="form-control" id="email" name="email" autocomplete="off" required>
               <div class="invalid-feedback">
                 Kolom ini tidak boleh kososng.
               </div>
@@ -92,7 +92,7 @@
 
             <div class="mb-3">
               <label for="phone">Phone</label>
-              <input type="text" class="form-control" id="phone" name="phone"  required>
+              <input type="text" class="form-control" id="phone" name="phone" autocomplete="off" required>
               <div class="invalid-feedback">
                 Kolom ini tidak boleh kososng.
               </div>

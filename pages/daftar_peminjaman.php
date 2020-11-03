@@ -41,7 +41,7 @@
             <th scope="col">Keperluan</th>
             <th scope="col">Kepala RT</th>
             <th scope="col">Kepala TU</th>
-            <th scope="col">Kepala Badan</th>
+            <th scope="col">Direktur Utama</th>
           </tr>
         </thead>
         <tbody>
