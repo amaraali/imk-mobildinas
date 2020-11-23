@@ -18,7 +18,7 @@
   <div class="container">
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="img/mcs.png" alt="" width="130" height="130">
-      <h2>Permohonan Peminjaman</h2>
+      <h2>Daftar Peminjaman</h2>
       <p class="lead">PT. Mencari Cinta Sejati</p>
     </div>
   </div>

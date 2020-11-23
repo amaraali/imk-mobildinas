@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 30, 2020 at 05:38 PM
+-- Generation Time: Nov 23, 2020 at 06:20 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -67,10 +67,7 @@ CREATE TABLE `peminjaman` (
 --
 
 INSERT INTO `peminjaman` (`id`, `id_user`, `id_jenis_keperluan`, `supir`, `durasi`, `satuan_durasi`, `waktu_pinjam`, `keperluan`, `created_at`, `is_approve_rt`, `is_approve_tu`, `is_approve_dir`) VALUES
-(3, 1, 1, 'didi', 0, 0, '2020-09-27 10:30:00', 'macul', '2020-09-26 16:42:44', NULL, 0, 0),
-(4, 1, 1, 'Amara Nur Ali', 0, 0, '2020-09-27 11:31:00', 'ulin', '2020-09-26 16:50:48', NULL, 1, NULL),
-(5, 15, 1, 'Aji', 0, 0, '2020-09-29 08:00:00', 'nongs', '2020-09-28 12:30:08', NULL, NULL, NULL),
-(6, 15, 1, 'Aji', 0, 0, '2020-09-29 08:00:00', 'nongs', '2020-09-28 12:31:36', NULL, NULL, NULL);
+(17, 15, 2, 'Amara Nur Ali', 0, 0, '2020-11-23 08:00:00', 'Perjalanan dinas selama 2 hari', '2020-11-23 12:58:02', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -94,10 +91,10 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`, `nama`, `level`, `email`, `phone`) VALUES
 (1, 'admin', '$2y$10$BGm8/s2bSJ0C.YgUIUhzuenspJsaqSPmAT8/oBOHtDqNRhc.hxtBu', 'Administrator', 'admin', 'admin', 'admin'),
-(13, 'dirut', '$2y$10$zWqfW//X1OxgoCXm9ul31ep623lS/ORIoui.WnDpkrfatp7ShBJqm', 'Direktur Utama', 'dir', 'direktur@mail.com', '0'),
-(15, 'spr', '$2y$10$wC4LL5Ev9CkPiNCUX6FoOe08tw/WZV0kFTJV6UlScFE8A3k9Q/jCW', 'Supir', 'supir', 'supir@mail.com', '0'),
-(16, 'kurt', '$2y$10$YAZfG4JmyjoNa/6PF0SxcOweQBjdSQ0qz4y67pmC7P9KeaS1K1pJa', 'Kepala RT', 'rt', 'kurt@mail.com', '0'),
-(18, 'ktu', '$2y$10$A/sASlDyH7rhfCgUKLQGb.M3QJ2Sk..WCeHGiq6lhk0szpeABq.Ay', 'Kepala TU', 'tu', 'ktu@mail.com', '0');
+(13, 'dirut', '$2y$10$zWqfW//X1OxgoCXm9ul31ep623lS/ORIoui.WnDpkrfatp7ShBJqm', 'Ghamal Febriyanto', 'dir', 'direktur@mail.com', '087865356786'),
+(15, 'spr', '$2y$10$wC4LL5Ev9CkPiNCUX6FoOe08tw/WZV0kFTJV6UlScFE8A3k9Q/jCW', 'Amara Nur Ali', 'supir', 'supir@mail.com', '087824325717'),
+(16, 'kurt', '$2y$10$YAZfG4JmyjoNa/6PF0SxcOweQBjdSQ0qz4y67pmC7P9KeaS1K1pJa', 'Fachrizal Zulfi Hendra', 'rt', 'kurt@mail.com', '08986534456'),
+(18, 'ktu', '$2y$10$A/sASlDyH7rhfCgUKLQGb.M3QJ2Sk..WCeHGiq6lhk0szpeABq.Ay', 'Bharaka Zulfa Maraghi', 'tu', 'ktu@mail.com', '089876543213');
 
 --
 -- Indexes for dumped tables
@@ -129,13 +126,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `jenis_keperluan`
 --
 ALTER TABLE `jenis_keperluan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `peminjaman`
 --
 ALTER TABLE `peminjaman`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `users`
