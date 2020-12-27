@@ -24,14 +24,15 @@
   </div>
 
   <div class="container">
-    <div class="col-lg-10 col-md-10 col-sm-10 mx-auto">
+    <div class="col-lg-12 col-md-10 col-sm-10 mx-auto">
       <div class="table-responsive">
       <table class="table">
         <thead class="thead-light">
           <tr>
             <th scope="col">No.</th>
             <th scope="col">Peminjam</th>
-            <th scope="col">Waktu</th>
+            <th scope="col">Waktu Pinjam</th>
+            <th scope="col">Waktu Kembali</th>
             <th scope="col">Keperluan</th>
             <th scope="col">Persetujuan</th>
           </tr>
@@ -43,6 +44,7 @@
             <td><?php echo $i;  ?></td>
             <td><?php echo $row["supir"];  ?></td>
             <td><?php echo $row["waktu_pinjam"]; ?></td>
+            <td><?php echo $row["waktu_kembali"]; ?></td>
             <td><?php echo $row["keperluan"];  ?></td>
             <td>
               <?php if($row["is_approve_".$level] == '0'){

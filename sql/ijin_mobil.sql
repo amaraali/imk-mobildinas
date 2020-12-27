@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 23, 2020 at 06:20 PM
+-- Generation Time: Dec 27, 2020 at 06:08 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -55,19 +55,13 @@ CREATE TABLE `peminjaman` (
   `durasi` int(11) DEFAULT NULL,
   `satuan_durasi` int(11) DEFAULT NULL,
   `waktu_pinjam` datetime DEFAULT NULL,
+  `waktu_kembali` datetime DEFAULT NULL,
   `keperluan` varchar(255) NOT NULL,
   `created_at` datetime NOT NULL,
   `is_approve_rt` int(11) DEFAULT NULL,
   `is_approve_tu` int(11) DEFAULT NULL,
   `is_approve_dir` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `peminjaman`
---
-
-INSERT INTO `peminjaman` (`id`, `id_user`, `id_jenis_keperluan`, `supir`, `durasi`, `satuan_durasi`, `waktu_pinjam`, `keperluan`, `created_at`, `is_approve_rt`, `is_approve_tu`, `is_approve_dir`) VALUES
-(17, 15, 2, 'Amara Nur Ali', 0, 0, '2020-11-23 08:00:00', 'Perjalanan dinas selama 2 hari', '2020-11-23 12:58:02', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -94,7 +88,8 @@ INSERT INTO `users` (`id`, `username`, `password`, `nama`, `level`, `email`, `ph
 (13, 'dirut', '$2y$10$zWqfW//X1OxgoCXm9ul31ep623lS/ORIoui.WnDpkrfatp7ShBJqm', 'Ghamal Febriyanto', 'dir', 'direktur@mail.com', '087865356786'),
 (15, 'spr', '$2y$10$wC4LL5Ev9CkPiNCUX6FoOe08tw/WZV0kFTJV6UlScFE8A3k9Q/jCW', 'Amara Nur Ali', 'supir', 'supir@mail.com', '087824325717'),
 (16, 'kurt', '$2y$10$YAZfG4JmyjoNa/6PF0SxcOweQBjdSQ0qz4y67pmC7P9KeaS1K1pJa', 'Fachrizal Zulfi Hendra', 'rt', 'kurt@mail.com', '08986534456'),
-(18, 'ktu', '$2y$10$A/sASlDyH7rhfCgUKLQGb.M3QJ2Sk..WCeHGiq6lhk0szpeABq.Ay', 'Bharaka Zulfa Maraghi', 'tu', 'ktu@mail.com', '089876543213');
+(18, 'ktu', '$2y$10$A/sASlDyH7rhfCgUKLQGb.M3QJ2Sk..WCeHGiq6lhk0szpeABq.Ay', 'Bharaka Zulfa Maraghi', 'tu', 'ktu@mail.com', '089876543213'),
+(20, 'spr2', '$2y$10$ueTEg/oPfN7Z8tdl6bXCYe6VRU1hpxRtNdunMRDLYg08WNVAZT6BW', 'Muhammad Zaenal', 'supir', 'supir2@mail.com', '087812349876');
 
 --
 -- Indexes for dumped tables
@@ -132,13 +127,13 @@ ALTER TABLE `jenis_keperluan`
 -- AUTO_INCREMENT for table `peminjaman`
 --
 ALTER TABLE `peminjaman`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -138,11 +138,12 @@ function input_peminjaman($data){
 	$keperluan = $data["keperluan"];
 	$id_jenis_keperluan = $data["jenis_keperluan"];
 	$waktu_pinjam = (new DateTime($data["waktu_pinjam"]))->format('Y-m-d H:i:s');
+	$waktu_kembali = (new DateTime($data["waktu_kembali"]))->format('Y-m-d H:i:s');
 	$id_user = $_SESSION['id_user'];
 	$created_at = date('Y-m-d H:i:s');
 
 	
-	mysqli_query($conn, "INSERT INTO peminjaman VALUES ('', '$id_user', '$id_jenis_keperluan', '$supir', '', '', '$waktu_pinjam', '$keperluan', '$created_at', NULL, NULL, NULL)");
+	mysqli_query($conn, "INSERT INTO peminjaman VALUES ('', '$id_user', '$id_jenis_keperluan', '$supir', '', '', '$waktu_pinjam', '$waktu_kembali', '$keperluan', '$created_at', NULL, NULL, NULL)");
 
 	return mysqli_affected_rows($conn);
 
