@@ -72,7 +72,7 @@ if(isset($_POST["login"])){
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="amara, fachrizal, ghamal, bharaka">
+    <meta name="generator" content="amara, fachrizal, ghamal, bharaka, zaenal">
     <title>Login Account</title>
 
 <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
